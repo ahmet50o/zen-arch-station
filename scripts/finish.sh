@@ -343,6 +343,9 @@ else
     warn "Invalid keymap '$GNOME_KEYMAP', skipping GNOME keyboard layout setting"
 fi
 
+# Mouse Settings (Disable Mouse Acceleration)
+apply_gsetting org.gnome.desktop.peripherals.mouse accel-profile 'flat'
+
 log "GNOME settings applied."
 
 # --- 2.7 GHOSTTY CONFIGURATION ---
